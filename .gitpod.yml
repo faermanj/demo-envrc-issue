@@ -1,2 +1,8 @@
 image:
   file: .gitpod.Dockerfile
+
+tasks:
+  - name: Should echo 'hello world'
+    command: |
+      direnv allow
+      echo "$MY_VARIABLE"
